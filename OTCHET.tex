@@ -18,12 +18,39 @@
 %\usepackage[font={bf}, name={Рис. }, justification=justified]{caption}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{listings}
+\usepackage{xcolor}
 
 \setmainfont{Times New Roman}
 \righthyphenmin=2 % правильные переносы
 \graphicspath{{images/}} % путь к картинкам
 
 \newenvironment{enums}{\begin{enumerate}[leftmargin=0em,itemindent=3em, label=\textbf{\arabic*}]}{\end{enumerate}} % нужные перечисления
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
 
 \title{РГР МАТАН}
 \author{Сиразетдинов, Шпинева, Лучинкин}
@@ -36,4 +63,11 @@
 	\newpage
 	\input{task1}
 	\newpage
+	\input{task2}
+	\newpage
+	\input{task3}
+	\newpage
+	\input{task4}
+	\newpage
+	\input{task5}
 \end{document}
