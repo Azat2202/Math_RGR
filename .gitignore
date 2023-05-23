@@ -1,7 +1,8 @@
-OTCHET.aux
-OTCHET.synctex.gz
-OTCHET.log
-OTCHET.out
-OTCHET.to
+*.aux
+*.synctex.gz
+*.log
+*.out
+*.to
+*.toc
 .idea/*
 *.rej
