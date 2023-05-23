@@ -1,0 +1,9 @@
+diff a/OTCHET.tex b/OTCHET.tex	(rejected hunks)
+@@ -20,6 +20,7 @@
+ \usepackage{subcaption}
+ \usepackage{listings}
+ \usepackage{xcolor}
++\usepackage{breqn}
+ 
+ \setmainfont{Times New Roman}
+ \righthyphenmin=2 % ╨┐╤А╨░╨▓╨╕╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╜╨╛╤Б╤Л
