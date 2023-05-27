@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.aux
 *.synctex.gz
 *.log
@@ -6,8 +7,11 @@
 *.toc
 .idea/*
 *.rej
+=======
 OTCHET.aux
 OTCHET.synctex.gz
 OTCHET.log
 OTCHET.out
 OTCHET.toc
+*.rej
+>>>>>>> 822853a (end of task5)
