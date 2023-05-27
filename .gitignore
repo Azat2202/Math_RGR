@@ -6,3 +6,8 @@
 *.toc
 .idea/*
 *.rej
+OTCHET.aux
+OTCHET.synctex.gz
+OTCHET.log
+OTCHET.out
+OTCHET.toc
