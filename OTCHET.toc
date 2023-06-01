@@ -1,3 +1,10 @@
 \babel@toc {russian}{}\relax 
 \contentsline {section}{\numberline {1}Задание 1. Интегральная сумма}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Интегральная сумма}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Задание 2. Площадь фигуры}{5}{section.2}%
+\contentsline {section}{\numberline {3}Задание 4. Приложение Рядов. Шпинева Ульяна. Вариант 6}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Задание 1}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Задание 2}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Задание 3}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Задание 3. Ряд Тейлора}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Задание}{9}{subsection.4.1}%
