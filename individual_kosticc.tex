@@ -1,0 +1,45 @@
+\section{Лучинкин Константин индивидуальное задание.}
+\subsection{Задание 1.}
+\begin{flalign*}
+& f(x) = e^x &
+\end{flalign*}
+Требуется посчитать \(f(-\frac{9}{10}) = \frac{1}{\sqrt[10]{e^9}}\)\\
+Разложим \(f(x)\) в ряд Тейлора:
+\begin{flalign*}
+&f(x) = \sum_{n=0}^\infty \frac{x^n}{n!}&
+\end{flalign*}
+Рассмотрим частичные суммы рядя \(S_{(N,x)} = \sum_{n=0}^N \frac{x^n}{n!}\):\newline
+\begin{flalign*}
+& S_{(1, x)} = 1 + x;\quad S_{(1, -0.9)} = 0.1 &\\
+& S_{(2, x)} = 1 + x + \frac{x^2}{2};\quad S_{(2, -0.9)} = 0.505 &\\
+& S_{(3, x)} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6};\quad S_{(3, -0.9)} = 0.3835 &\\
+&...&\\
+& S_{(7, x)} = \sum_{n=0}^7 \frac{x^7}{7!};\quad S_{(7, -0.9)} \approx 0.40655 &\\
+& S_{(8, x)} = \sum_{n=0}^8 \frac{x^8}{8!};\quad S_{(8, -0.9)} \approx 0.40657 &
+\end{flalign*}
+Таким образом \(f(x) \approx 0.4065\) (с точностью до 0.0001)
+\subsection{Задание 2}
+\begin{flalign*}
+    &\int_0^1 \frac{x^2dx}{\sqrt[4]{16 + x^4}}&\\
+    &\text{Разложим }f(x) \text{ в ряд:}&\\
+    &f(x) = \frac{x^2}{\sqrt[4]{16 + x^4}} = \frac{x^2}{2\sqrt[4]{\frac{x^4}{16} + 1}} = \frac{x^2}{2}\Big(\frac{x^4}{16}+1\Big)^{-\frac{1}{4}} = \frac{x^2}{2}\Big(1 + \sum_{n=0}^\infty \frac{\prod_{i=1}^{n-1}\Big(-\frac{1}{4}-i\Big)}{n!}\Big(\frac{x^4}{16}\Big)^n\Big)&\\
+    &\int_0^1 \Big(\frac{x^2}{2}\Big)dx \approx 0.1666&\\
+    &\int_0^1 \Big(\frac{x^2}{2} - \frac{x^6}{128}\Big)dx \approx 0.1655 &\\
+    &\int_0^1 \Big(\frac{x^2}{2} - \frac{x^6}{128} + \frac{5x^{10}}{16384}\Big)dx \approx 0.1655 
+\end{flalign*}
+Таким образом \(\int_0^1 \frac{x^2dx}{\sqrt[4]{16 + x^4}} \approx 0.1655\) (с точностью до 0.0001)
+\subsection{Задание 3}
+Найти в виде степенного ряда решение дифференциального уравнения,
+удовлетворяющего заданным начальным условиям. Ограничиться четырьмя
+членами ряда.
+\begin{flalign*}
+    &y'' = e^{y-2}\ln y' + x &\\
+    &y(3) = 2 &\\
+    &y'(3) = 1&
+\end{flalign*}
+Запишем формулу Тейлора для \(x=3\):
+\begin{flalign*}
+    &f(x) = y(3) + y'(3)(x-3) + y''(3)(x-3)^2&\\
+    &y''(3) = e^{y(3)-2}\ln y'(3) + 3 = 3&\\
+    &f(x) = 2 + (x-3) + 3(x-3)^2 + r_n\quad \quad \quad \quad r_n \text{-остаточный член}&
+\end{flalign*}

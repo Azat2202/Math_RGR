@@ -1,0 +1,23 @@
+\section{Задание 3.}
+Разложим функцию в ряд:
+\begin{flalign*}
+&f(x) = ln\Bigr(\frac{x-2}{7 - 2x}\Bigl) = ln((x-3)+1) - ln((6-2x)+1) = &\\
+&\sum_{n=1}^{\infty} (-1)^{(n-1)} \frac{(x-3)^n}{n!} - \sum_{n=1}^{\infty} (-1)^{(n-1)} \frac{(6-2x)^n}{n!} = \sum_{n=1}^{\infty} (-1)^{(n-1)} \frac{(x-3)^n}{n!} + \sum_{n=1}^{\infty}\frac{2^n(3-x)^n}{n!} = &\\
+& = \sum_{n=1}^{\infty} ((-1)^{(n-1)} + 2^n) \frac{(x-3)^n}{n!}^{(*)}
+\end{flalign*}
+Найдём область сходимости ряда. \( \sum_{n=1}^{\infty}\) сходится на \((-1,1]\). Тогда для того, чтобы найти область сходимости \((*)\) решим систему уравнений:\newline
+\[
+\begin{cases}
+-1 < x-3 \le 1\\
+-1 < 6 - 2x \le 1
+\end{cases}
+\iff
+\begin{cases}
+2 < x \le 4\\
+3.5 > x \ge 2.5
+\end{cases}
+\iff
+2.5 \le x < 3.5
+\]\newline
+Гафик функции и бесконечного ряда:
+https://www.desmos.com/calculator/j07rbqxznf
