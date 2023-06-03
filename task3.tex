@@ -1,11 +1,13 @@
 \section{Задание 3. Несобственный интеграл}
-Исследуем сходимость \( \int_{1}^{\infty} \frac{dx}{(x^\alpha) 1)arctg(x)} \)
+Исследуем сходимость \( \int_{1}^{\infty} \frac{dx}{(x^\alpha+ 1)arctg(x)} \)
+Сравним ряд с \(\frac{1}{x^\alpha}\)
 \begin{flalign*}
-    &\lim_{x \to \infty} \frac{1}{(x^\alpha + 1)arctg(x)(\frac{1}{x^\alpha})} < lim_{x \to \infty} \frac{1}{(x^\alpha + 1)\frac{\pi}{2}(\frac{1}{x^\alpha})},&\\
+    &\lim_{x \to \infty} \frac{1}{(x^\alpha + 1)arctg(x)(\frac{1}{x^\alpha})} \le lim_{x \to \infty} \frac{1}{(x^\alpha + 1)\frac{\pi}{4}(\frac{1}{x^\alpha})},&\\
 \end{flalign*}
-Поскольку \(\arctg(x) < \frac{\pi}{2}\)\\
+Поскольку \(\arctg(x) \ge \frac{\pi}{4}\) на \([1,\infty)\)\\
 \begin{flalign*}
-    &\lim_{x \to \infty} \frac{1}{(x^\alpha + 1)\frac{\pi}{2}(\frac{1}{x^\alpha})} = \lim_{x \to \infty} \frac{x^\alpha}{\frac{\pi}{2}x^\alpha + \frac{\pi}{2}} = \frac{2}{\pi}
+    &\lim_{x \to \infty} \frac{1}{(x^\alpha + 1)\frac{\pi}{4}(\frac{1}{x^\alpha})} = \lim_{x \to \infty} \frac{x^\alpha}{\frac{\pi}{4}x^\alpha + \frac{\pi}{4}} = \frac{4}{\pi}
     &\\
 \end{flalign*}
 Тогда по предельному признаку сравнения \( \int_{1}^{\infty} \frac{dx}{(x^\alpha) + 1)\arctg(x)}\)  сходится или расходится одновременно с \(\int_{1}^{\infty} \frac{dx}{x^\alpha}\). Таким образом \(\int_{1}^{\infty} \frac{dx}{(x^\alpha) + 1)\arctg(x)} \) расходится при \(\alpha \leq 1\) и сходится при \(\alpha > 1\)
+https://www.desmos.com/calculator/nmd2sx8waf
